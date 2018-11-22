@@ -1,5 +1,5 @@
 const app = require('./index')
-const PORT = process.env.PORT || 4200 // this can be very useful if you deploy to Heroku!
+const PORT = process.env.PORT || 4321 // this can be very useful if you deploy to Heroku!
 const { db } = require('./db/index')
 
 db.sync(

@@ -12,6 +12,25 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store)
 const dbStore = new SequelizeStore({ db: db })
 dbStore.sync()
 
+// This is a global Mocha hook, used for resource cleanup.
+// Otherwise, Mocha v4+ never quits after tests.
+if (process.env.NODE_ENV === 'test') {
+  after('close the session store', () => sessionStore.stopExpiringSessions())
+}
+
+if (process.env.NODE_ENV !== 'production') require('../secrets')
+
+passport.serializeUser((user, done) => done(null, user.id))
+
+passport.deserializeUser(async (id, done) => {
+  try {
+    const user = await db.models.user.findById(id)
+    done(null, user)
+  } catch (err) {
+    done(err)
+  }
+})
+
 //loggin middleware
 app.use(morgan('dev'));
 

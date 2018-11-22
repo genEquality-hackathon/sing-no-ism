@@ -7,6 +7,7 @@
     "start": "node ./server/main.js",
     "start-dev": "NODE_ENV='development' webpack -w & nodemon ./server/main.js",
     "start-virtual": "webpack-dev-server",
+    "postinstall": "touch secrets.js",
     "test:server": "mocha tests/server-tests",
     "test:client": "mocha tests/client-tests --require babel-core/register --require tests/client-tests/setup.js",
     "test": "NODE_ENV='test' npm run test:server & npm run test:client"
