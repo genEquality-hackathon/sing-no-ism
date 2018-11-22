@@ -93,8 +93,9 @@
 
     4.3 Create Sequelize Instance
     invoke the Sequelize constructor and pass on it the database address
+    * Database name will be defined based on our project name on package.json
     ```js
-    const db = new Sequelize(`postgres://localhost:5432/boilermaker`, {
+    const db = new Sequelize(`postgres://localhost:5432/${databaseName}`, {
     logging: false
     })
     ```

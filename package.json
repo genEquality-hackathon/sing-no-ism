@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./server/main.js",
-    "start-dev": "webpack -w & nodemon ./server/main.js",
+    "start-dev": "NODE_ENV='development' webpack -w & nodemon ./server/main.js",
     "start-virtual": "webpack-dev-server",
     "test:server": "mocha tests/server-tests",
     "test:client": "mocha tests/client-tests --require babel-core/register --require tests/client-tests/setup.js",
-    "test": "npm run test:server & npm run test:client"
+    "test": "NODE_ENV='test' npm run test:server & npm run test:client"
   },
   "author": "",
   "license": "ISC",

@@ -1,17 +1,20 @@
-
+const isDev = process.env.NODE_ENV === 'development'
 
 module.exports = {
+  mode: isDev ? 'development' : 'production',
   entry: ['babel-polyfill', './client/app'],
-  mode: 'development',
   output: {
-    path: __dirname, // assumes your bundle.js will also be in the root of your project folder
+    path: __dirname,
     filename: './public/bundle.js'
   },
-  devtool: 'source-maps',
+  resolve: {
+    extensions: ['.js', '.jsx']
+  },
+  devtool: 'source-map',
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader'
