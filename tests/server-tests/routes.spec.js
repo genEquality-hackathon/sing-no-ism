@@ -1,5 +1,5 @@
 const supertest = require('supertest')
-const app = require('../../server/index')
+const {app} = require('../../server/index')
 const client = supertest(app) // to send request (CRUD) client.post(<api>).send(<body>)
 const { expect } = require('chai')
 
