@@ -170,7 +170,5 @@
     Watch for changes: `--watch`
     Configure babel: `.babelrc`
 
-  10. Deploying
-    10.1 Manually
 
 

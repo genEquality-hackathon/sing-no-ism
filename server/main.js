@@ -9,7 +9,7 @@ const startListening = () => {
 async function bootApp() {
   await dbStore.sync()
   await db.sync(
-    // { force: true } //drop all the tables
+    // { force: true } //WARNING: drop all the tables.
   )
   await createApp()
   await startListening()
