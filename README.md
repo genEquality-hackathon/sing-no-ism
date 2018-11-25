@@ -21,6 +21,7 @@ A ready-to-use boilerplate for applications using Node.js, Express, Sequelize, R
 
 ## Testing it:
   `npm test`
+  _When touching the db inside tests, it's necessary to hook db.sinc({force:true}) before all tests_
 
 ## Deploying it (manually, using heroku):
   1. Create your heroku app:
