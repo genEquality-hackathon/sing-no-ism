@@ -6,6 +6,7 @@ const app = express();
 const session = require('express-session')
 const {db} = require('./db')
 const passport = require('passport')
+const PORT = process.env.PORT || 4321
 
 //config to store session
 const SequelizeStore = require('connect-session-sequelize')(session.Store)
@@ -70,4 +71,24 @@ const createApp = () => {
   })
 }
 
-module.exports = {createApp, dbStore, app}
+const startListening = () => {
+  app.listen(PORT, () => console.log(`listening on port ${PORT}`))
+}
+
+async function bootApp() {
+  await dbStore.sync()
+  await db.sync(
+    // { force: true } //WARNING: drop all the tables.
+  )
+  await createApp()
+  await startListening()
+}
+
+if (require.main === module) {
+  bootApp()
+} else {
+  createApp()
+}
+
+
+module.exports = app

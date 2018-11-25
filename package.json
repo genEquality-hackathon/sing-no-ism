@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./server/main.js",
-    "start-dev": "NODE_ENV='development' webpack -w & NODE_ENV='development' nodemon ./server/main.js",
+    "start-dev": "NODE_ENV='development' webpack -w & NODE_ENV='development' nodemon ./server/index.js",
     "start-virtual": "webpack-dev-server",
     "postinstall": "touch secrets.js",
     "test": "NODE_ENV='test' mocha \"./tests/**/*.spec.js\" --require babel-polyfill --require babel-core/register --require tests/client-tests/setup.js",
