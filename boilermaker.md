@@ -145,6 +145,14 @@
     `Google console`: https://console.cloud.google.com/home/dashboard?project=boilermaker-demo-211119
 
 8.  CSS
+    8.1 Install
+    `npm install --save-dev style-loader css-loader`
+    8.2 Add to webpack config
+    Docs: https://github.com/webpack-contrib/sass-loader
+    8.3 Create an entry point:
+    `./client/stile/main.scss`
+    8.4 Import the entry point in the js entry point for the webpack
+
 
 9.  Testing
     9.1 Install

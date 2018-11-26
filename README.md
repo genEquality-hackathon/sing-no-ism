@@ -1,6 +1,6 @@
 # Boilermaker
 
-A ready-to-use boilerplate for applications using Node.js, Express, Sequelize, React, and Redux. For testing, Mocha & Chai.
+A ready-to-use boilerplate for applications using Node.js, Express, Sequelize, React, and Redux. For testing, Mocha & Chai. Style? SCSS!
 
 ## How to use it:
   1. Create your own repo on gitHub, **without a README.md file**
