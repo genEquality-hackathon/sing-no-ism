@@ -3,7 +3,7 @@
 A genEquality Hackathon project using Node.js, Express, Postgres, Sequelize, React, and Redux. For testing, Mocha & Chai. Style? SCSS!
 
 # MVP condition:
-_Users can visit a deployed production site, and listen a song using the application. The application has to return info about that song, plus its "ism" rating scale. When logged-in, the users have to be able to rate either abusive words or terms in a song lyrics. The application have to learn from these ratings and identify the same pattern in other lyrics._
+_Users can visit a deployed production site, and listen to a song using the application. The application has to return info about that song, plus its "ism" rating scale. When logged-in, users have to be able to rate either abusive words or terms in a song lyrics. The application has to learn from these ratings and identify the same pattern in other lyrics._
 
 
 # Project Description:
@@ -11,7 +11,7 @@ _Name:_ Sing no Ism
 _Idea:_ "Ism" rating scale for song lyrics
 _Isms: [Racism, Sexism, Classism, Ableism, Anti-Semitism, Ageism and Heterosexism]_
 _Category:_ [Gender equality in culture]
-_Why:_ Sometimes we listen to music without realize how aggressive it is. Our subconscious absorbs all these "hidden" messages.  The app will show it, raising awareness about the issue.
+_Why:_ Sometimes we listen to music without realizing how aggressive it is. Our subconscious absorbs all of these "hidden" messages. The app will show it, raising awareness about these issues.
 
 ## Starting the application:
   1. Create two databases using `Postgres` command line:
