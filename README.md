@@ -1,4 +1,4 @@
-# Sing No Ism
+# Sing No Ism - https://sing-no-ism.herokuapp.com/
 
 A genEquality Hackathon project using Node.js, Express, Postgres, Sequelize, React, and Redux. For testing, Mocha & Chai. Style? SCSS!
 
