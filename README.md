@@ -6,7 +6,7 @@ A ready-to-use boilerplate for applications using Node.js, Express, Sequelize, R
   1. Create your own repo on gitHub, **without a README.md file**
   2. Clone it to your local machine
   3. Add this repo as a remote one:
-  `git remote boilermaker https://github.com/FullstackAcademy/filafb/boilermaker-simple.git`
+  `git remote add boilermaker https://github.com/FullstackAcademy/filafb/boilermaker-simple.git`
   4. `git fetch boilermaker`
   5. `git merge boilermaker master`
 
