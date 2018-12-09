@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./server/main.js",
+    "start": "node ./server/index.js",
     "start-dev": "NODE_ENV='development' webpack -w & NODE_ENV='development' nodemon ./server/index.js",
     "start-virtual": "webpack-dev-server",
     "postinstall": "touch secrets.js",

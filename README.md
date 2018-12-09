@@ -1,38 +1,40 @@
-# Boilermaker
+# Sing No Ism
 
-A ready-to-use boilerplate for applications using Node.js, Express, Sequelize, React, and Redux. For testing, Mocha & Chai. Style? SCSS!
+A genEquality Hackathon project using Node.js, Express, Postgres, Sequelize, React, and Redux. For testing, Mocha & Chai. Style? SCSS!
 
-## How to use it:
-  1. Create your own repo on gitHub, **without a README.md file**
-  2. Clone it to your local machine
-  3. Add this repo as a remote one:
-  `git remote add boilermaker https://github.com/FullstackAcademy/filafb/boilermaker-simple.git`
-  4. `git fetch boilermaker`
-  5. `git merge boilermaker master`
+# MVP condition:
+_Users can visit a deployed production site, and listen a song using the application. The application has to return info about that song, plus its "ism" rating scale. When logged-in, the users have to be able to rate either abusive words or terms in a song lyrics. The application have to learn from these ratings and identify the same pattern in other lyrics._
+
+
+# Project Description:
+_Name:_ Sing no Ism
+_Idea:_ "Ism" rating scale for song lyrics
+_Isms: [Racism, Sexism, Classism, Ableism, Anti-Semitism, Ageism and Heterosexism]_
+_Category:_ [Gender equality in culture]
+_Why:_ Sometimes we listen to music without realize how aggressive it is. Our subconscious absorbs all these "hidden" messages.  The app will show it, raising awareness about the issue.
 
 ## Starting the application:
-  1. Change the application name on package.json
-  2. Create two databases using `Postgres` command line:
-    - createdb <your_application_name>
-    - createdb <your_application_name-test>
-  3. Run the following script:
-  `npm run start-dev`
-  4. Enjoy it on localhost:4321. Want a different port? No worries. Set it on `server/index` line 2.
+  1. Create two databases using `Postgres` command line:
+    - `createdb sing-no-ism`
+    - `createdb sing-no-ism-test`
+  2. `npm install`
+  3. `npm run start-dev`
+  4. Enjoy it on localhost:4321.
 
 ## Testing it:
   `npm test`
   _When touching the db inside tests, it's necessary to hook db.sinc({force:true}) before all tests_
 
 ## Deploying it (manually, using heroku):
-  1. Create your heroku app:
-  `heroku create your-app-name`
-  2. Add a postgres database to your heroku dyno:
-  `heroku addons:create heroku-postgresql:hobby-dev`
-  3. Add the heroku address as a remote on your git:
-  `heroku git:remote your-app-name`
-  _Rename your heroku remote name with:_
-  `git remote rename heroku new-remote-name`
-  4. When you a ready to deploy it, make sure everything is commited, and then run:
+  1. Add the heroku app as a remote:
+  `heroku git:remote sing-no-ism`
+  2. Rename your remote name:
+  `git remote rename heroku production`
+  3. Run the depoloy script:
   `npm run deploy`
-  Your terminal will ask you the branch you want to deploy and the remote to receive it. It can be useful in the case you have different remotes, as dev, staging and/or production.
-  5. You should be good to go!
+  Your terminal will ask you the __branch__ you want to deploy and the __remote__ to receive it.
+
+  There is a dev heroku app, in case you want to test a branch in the heroku enviroment:
+  `heroku git:remote sing-no-ism-app`
+  `git remote rename heroku dev`
+  `npm run deploy`
