@@ -7,10 +7,10 @@ _Users can visit a deployed production site, and listen to a song using the appl
 
 
 # Project Description:
-_Name:_ Sing no Ism
-_Idea:_ "Ism" rating scale for song lyrics
-_Isms: [Racism, Sexism, Classism, Ableism, Anti-Semitism, Ageism and Heterosexism]_
-_Category:_ [Gender equality in culture]
+_Name:_ Sing no Ism <br /> 
+_Idea:_ "Ism" rating scale for song lyrics <br /> 
+_Isms: [Racism, Sexism, Classism, Ableism, Anti-Semitism, Ageism and Heterosexism]_ <br /> 
+_Category:_ [Gender equality in culture] <br /> 
 _Why:_ Sometimes we listen to music without realizing how aggressive it is. Our subconscious absorbs all of these "hidden" messages. The app will show it, raising awareness about these issues.
 
 ## Starting the application:
